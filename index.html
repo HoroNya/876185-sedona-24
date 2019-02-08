@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="" alt="Логотип Седона">
+        <img src="img\logo.svg" alt="Логотип Седона">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -18,6 +18,7 @@
     </header>
     <main class="container">
       <img src="img\background_photo.jpg" alt="Седона">
+      <img src="img\welcome.svg" alt="Приветствие">
       <h1 class="title-page">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -43,15 +44,17 @@
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <section class="hotel-selection">
           <h2 class="title">Поиск гостиницы в Седоне</h2>
-          <p>Дата заезда</p>
-          <input type="date" name="calendar" value="2017-04-24">
-          <p>Дата выезда</p>
-          <input type="date" name="calendar" value="2017-07-04">
-          <p>Взрослые</p>
-          <input type="number" name="number" value="2">
-          <p>Дети</p>
-         <input type="number" name="number" value="0">
-         <button type="button" name="button">Найти</button>
+          <form class="" action="index.html" method="post">
+            <p>Дата заезда</p>
+            <input type="date" name="calendar" value="2017-04-24">
+            <p>Дата выезда</p>
+            <input type="date" name="calendar" value="2017-07-04">
+            <p>Взрослые</p>
+            <input type="number" name="number" value="2">
+            <p>Дети</p>
+            <input type="number" name="number" value="0">
+            <button type="button" name="button">Найти</button>
+          </form>
         </section>
       </section>
     </main>
