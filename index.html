@@ -45,14 +45,22 @@
         <section class="hotel-selection">
           <h2 class="title">Поиск гостиницы в Седоне</h2>
           <form class="" action="index.html" method="post">
-            <p>Дата заезда</p>
-            <input type="date" name="calendar" value="2017-04-24">
-            <p>Дата выезда</p>
-            <input type="date" name="calendar" value="2017-07-04">
-            <p>Взрослые</p>
-            <input type="number" name="number" value="2">
-            <p>Дети</p>
-            <input type="number" name="number" value="0">
+            <label for="arrival-date">
+              <p>Дата заезда</p>
+            </label>
+            <input id="arrival-date" type="date" name="calendar" value="2017-04-24">
+            <label for="departure-date">
+              <p>Дата выезда</p>
+            </label>
+            <input id="departure-date" type="date" name="calendar" value="2017-07-04">
+            <label for="adults">
+              <p>Взрослые</p>
+            </label>
+            <input id="adults" type="number" name="number" value="2">
+            <label for="children">
+              <p>Дети</p>
+            </label>
+            <input id="children" type="number" name="number" value="0">
             <button type="button" name="button">Найти</button>
           </form>
         </section>
