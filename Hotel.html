@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="main-header">
@@ -22,17 +24,18 @@
         <form class="selection-form" action="index.html" method="post">
           <h2>Инфрастуруктура:</h2>
           <ul>
-            <li><input id="user-pool" type="checkbox" name="pool"><label for="user-pool">бассейн</label></li>
-            <li><input id="user-parking" type="checkbox" name="parking"><label for="user-parking">Парковка</label></li>
-            <li><input id="user-wi-fi" type="checkbox" name="wi-fi"><label for="user-wi-fi">WI-FI</label></li>
+            <li><input id="pool" type="checkbox" name="pool"><label for="pool">бассейн</label></li>
+            <li><input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label></li>
+            <li><input id="wi-fi" type="checkbox" name="wi-fi"><label for="wi-fi">WI-FI</label></li>
           </ul>
           <h2>Типа жилья:</h2>
           <ul>
-            <li><input id="user-hotel" type="checkbox" name="hotel"><label for="user-hotel">Гостиница</label></li>
-            <li><input id="user-motel" type="checkbox" name="motel"><label for="user-motel">Мотель</label></li>
-            <li><input id="user-apartments" type="checkbox" name="apartments"><label for="user-apartments">Апатаменты</label></li>
+            <li><input id="hotel" type="checkbox" name="hotel"><label for="hotel">Гостиница</label></li>
+            <li><input id="motel" type="checkbox" name="motel"><label for="motel">Мотель</label></li>
+            <li><input id="apartments" type="checkbox" name="apartments"><label for="apartments">Апатаменты</label></li>
           </ul>
           <h2>Стоимость в сутки:</h2>
+          <input type="range" min="0" name="cost">
           <button type="submit" name="button">показать</button>
         </form>
       </section>
