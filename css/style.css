@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -13,11 +13,13 @@ a {
   text-decoration: none;
 }
 
-.site-navigation {
+.site-navigation,
+.list-features,
+.sity-features{
   list-style: none;
 }
 
-.site-navigation a{
+.site-navigation a {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -26,12 +28,66 @@ a {
   background-color: #ffffff;
 }
 
+.site-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
 .title-page {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   color: #000000;
 }
-.line-height-26 {
+
+.subtitle {
   line-height: 26px;
+  text-align: center;
+}
+
+.features {
+  text-align: center;
+}
+.list-features h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.white-text h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.white-text {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.sity-features h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+.sity-features {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.bold-text {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+
+  text-align: center;
 }

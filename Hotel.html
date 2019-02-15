@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html"><img src="img\logo.svg" width="138" height="70" alt="Логотип Седона"></a>
+        <a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона"></a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -22,21 +22,23 @@
       <h1 class="visually-hidden">Список гостиниц</h1>
       <section class="selection-qualities">
         <form class="selection-form" action="index.html" method="post">
-          <h2>Инфрастуруктура:</h2>
-          <ul>
-            <li><input id="pool" type="checkbox" name="pool"><label for="pool">бассейн</label></li>
-            <li><input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label></li>
-            <li><input id="wi-fi" type="checkbox" name="wi-fi"><label for="wi-fi">WI-FI</label></li>
-          </ul>
-          <h2>Типа жилья:</h2>
-          <ul>
-            <li><input id="hotel" type="checkbox" name="hotel"><label for="hotel">Гостиница</label></li>
-            <li><input id="motel" type="checkbox" name="motel"><label for="motel">Мотель</label></li>
-            <li><input id="apartments" type="checkbox" name="apartments"><label for="apartments">Апатаменты</label></li>
-          </ul>
-          <h2>Стоимость в сутки:</h2>
-          <input type="range" min="0" name="cost">
-          <button type="submit" name="button">показать</button>
+          <fieldset>
+            <legend>Инфрастуруктура:</legend>
+              <input id="pool" type="checkbox" name="pool"><label for="pool">бассейн</label>
+              <input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
+              <input id="wi-fi" type="checkbox" name="wi-fi"><label for="wi-fi">WI-FI</label>
+          </fieldset>
+          <fieldset>
+            <legend>Типа жилья:</legend>
+            <input id="hotel" type="checkbox" name="hotel"><label for="hotel">Гостиница</label>
+            <input id="motel" type="checkbox" name="motel"><label for="motel">Мотель</label>
+            <input id="apartments" type="checkbox" name="apartments"><label for="apartments">Апатаменты</label>
+            </fieldset>
+          </fieldset>
+            <legend>Стоимость в сутки:</legend>
+            <input type="range" min="0" name="cost">
+            <button type="submit" name="button">показать</button>
+          </fieldset>
         </form>
       </section>
       <section class="selection-hostel">
@@ -45,7 +47,7 @@
         <span>по типу</span>
         <span>по рейтингу</span>
         <div class="hostel">
-          <img src="img\amara_resort_spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
+          <img src="img/amara_resort_spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
           <h3 class="hostel-name">Amara Resort & Spa</h3>
           <p>Гостиница</p>
           <p>от 4000 р.</p>
@@ -54,7 +56,7 @@
           <span class="rating">Рейтинг: 8,5</span>
         </div>
         <div class="hostel">
-          <img src="img\desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+          <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
           <h3 class="hostel-name">Desert Quail Inn</h3>
           <p>Мотель</p>
           <p>от 3000 р.</p>
@@ -63,7 +65,7 @@
           <span class="rating">Рейтинг: 8,9</span>
         </div>
         <div class="hostel">
-          <img src="img\villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           <h3 class="hostel-name">Villas at Poco Diablo</h3>
           <p>Апартаменты</p>
           <p>от 2000 р.</p>
@@ -81,7 +83,7 @@
           <li><a class="social-button" href="#"></a></li>
         </ul>
         <p>Website by</p>
-        <a href="#"><img src="" alt="HTML-Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy.svg" alt="htmlacademy"></a>
     </footer>
   </body>
 </html>
