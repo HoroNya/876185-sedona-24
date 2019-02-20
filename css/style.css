@@ -36,14 +36,15 @@ background-color: #ffffff;
   background-color: #ffffff;
 }
 
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
 .site-navigation a:focus {
   color: #000000;
   opacity: 0.3;
 }
 
-.site-navigation a:hover {
-  color: #81b3d2;
-}
 
 .white-background {
   background-color: #ffffff;
@@ -153,6 +154,17 @@ background-color: #ffffff;
 .button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.form-search input {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
 }
 
 .main-footer {
@@ -274,4 +286,8 @@ background-color: #ffffff;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+}
+
+.site-navigation .currently-selected {
+  color: #766357;
 }
