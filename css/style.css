@@ -12,10 +12,18 @@ body {
 a {
   text-decoration: none;
 }
+.main-page {
+background-image: url(../img/decoration_for_background.svg),
+url(../img/background_photo.jpg);
+background-repeat: no-repeat;
+background-position: center 506px, center -27px;
+background-color: #ffffff;
+}
 
 .site-navigation,
 .list-features,
-.sity-features{
+.sity-features,
+.footer-social{
   list-style: none;
 }
 
@@ -37,29 +45,36 @@ a {
   color: #81b3d2;
 }
 
+.white-background {
+  background-color: #ffffff;
+}
+
 .title-page {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
   color: #000000;
+
+  background-color: #ffffff;
 }
 
 .subtitle {
   line-height: 26px;
   text-align: center;
+
+  background-color: #ffffff;
 }
 
 .features {
   text-align: center;
 }
-.list-features h2 {
-  font-size: 21px;
-  font-weight: 700;
-  color: #000000;
+
+.blue-background {
+  background-color: #81b3d2;
 }
 
-.white-text h2 {
+.white-list-title {
   font-size: 21px;
   font-weight: 700;
   color: #ffffff;
@@ -79,15 +94,184 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+
 .sity-features {
   color: #333333;
+
   background-color: #ffffff;
 }
 
-.bold-text {
-  font-size: 30px;
-  font-weight: 700;
-  color: #000000;
+.grey-background {
+  background-color: #f2f2f2;
+}
 
+.list-title {
+  color: #000000;
+}
+.big-text {
+  font-size: 30px;
+  color: #000000;
   text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.title-search {
+
+  color: #ffffff;
+  background-color: #766357;
+  text-align: center;
+}
+
+.label-text {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.button {
+  width: 458px;
+  height: 58px;
+
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+
+  background-color: #81b3d2;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+  opacity:0,9;
+}
+
+.footer-sedona {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+.social-button:active {
+  background-color: #5496bd;
+}
+.twitter {
+  background-repeat: no-repeat;
+  background-image: url("../img/twitter_icon.svg");
+  background-position: center;
+}
+
+.twitter:active {
+  opacity: 0.3;
+}
+
+.facebook {
+  background-repeat: no-repeat;
+  background-image: url("../img/facebook_icon.svg");
+  background-position: center;
+}
+
+.facebook:active {
+  opacity: 0.3;
+}
+
+.youtube {
+  background-repeat: no-repeat;
+  background-image: url("../img/youtube_icon.svg");
+  background-position: center;
+}
+
+.youtube:active {
+  opacity: 0.3;
+}
+
+.hostel-name {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.detail-button {
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.detail-button:hover,
+.detail-button:focus {
+  background-color: #669ec0;
+}
+
+.detail-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+.reservation-button {
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.reservation-button:hover,
+.reservation-button:focus {
+  background-color: #604e43;
+}
+
+.reservation-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+.rating {
+  background-color: #f2f2f2;
+}
+
+.selection-form {
+  background-color: #81b3d2;
+  background-image: url(../img/filter_background.jpg);
+  background-repeat: no-repeat;
+}
+.form-text {
+  color: #ffffff;
+}
+
+.form-legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.found {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
 }

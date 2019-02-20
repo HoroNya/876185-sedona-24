@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -23,26 +24,26 @@
       <section class="selection-qualities">
         <form class="selection-form" action="index.html" method="post">
           <fieldset>
-            <legend>Инфрастуруктура:</legend>
-              <input id="pool" type="checkbox" name="pool"><label for="pool">бассейн</label>
-              <input id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
-              <input id="wi-fi" type="checkbox" name="wi-fi"><label for="wi-fi">WI-FI</label>
+            <legend class="form-legend">Инфрастуруктура:</legend>
+              <input id="pool" type="checkbox" name="pool"><label class="form-text" for="pool">бассейн</label>
+              <input id="parking" type="checkbox" name="parking"><label class="form-text" for="parking">Парковка</label>
+              <input id="wi-fi" type="checkbox" name="wi-fi"><label class="form-text" for="wi-fi">WI-FI</label>
           </fieldset>
           <fieldset>
-            <legend>Типа жилья:</legend>
-            <input id="hotel" type="checkbox" name="hotel"><label for="hotel">Гостиница</label>
-            <input id="motel" type="checkbox" name="motel"><label for="motel">Мотель</label>
-            <input id="apartments" type="checkbox" name="apartments"><label for="apartments">Апатаменты</label>
+            <legend class="form-legend">Типа жилья:</legend>
+            <input id="hotel" type="checkbox" name="hotel"><label class="form-text" for="hotel">Гостиница</label>
+            <input id="motel" type="checkbox" name="motel"><label class="form-text" for="motel">Мотель</label>
+            <input id="apartments" type="checkbox" name="apartments"><label class="form-text" for="apartments">Апатаменты</label>
             </fieldset>
           </fieldset>
-            <legend>Стоимость в сутки:</legend>
+            <legend class="form-legend">Стоимость в сутки:</legend>
             <input type="range" min="0" name="cost">
             <button type="submit" name="button">показать</button>
           </fieldset>
         </form>
       </section>
       <section class="selection-hostel">
-        <span>Найдено</span>
+        <p class="found">Найдено:</p>
         <p>сортировка:</p>
         <span>по типу</span>
         <span>по рейтингу</span>
@@ -51,8 +52,8 @@
           <h3 class="hostel-name">Amara Resort & Spa</h3>
           <p>Гостиница</p>
           <p>от 4000 р.</p>
-          <a class="button" href="#">Подробнее</a>
-          <a class="button" href="#">Забронировать</a>
+          <a class="detail-button" href="#">Подробнее</a>
+          <a class="reservation-button" href="#">Забронировать</a>
           <span class="rating">Рейтинг: 8,5</span>
         </div>
         <div class="hostel">
@@ -60,8 +61,8 @@
           <h3 class="hostel-name">Desert Quail Inn</h3>
           <p>Мотель</p>
           <p>от 3000 р.</p>
-          <a class="button" href="#">Подробнее</a>
-          <a class="button" href="#">Забронировать</a>
+          <a class="detail-button" href="#">Подробнее</a>
+          <a class="reservation-button" href="#">Забронировать</a>
           <span class="rating">Рейтинг: 8,9</span>
         </div>
         <div class="hostel">
@@ -69,8 +70,8 @@
           <h3 class="hostel-name">Villas at Poco Diablo</h3>
           <p>Апартаменты</p>
           <p>от 2000 р.</p>
-          <a class="button" href="#">Подробнее</a>
-          <a class="button" href="#">Забронировать</a>
+          <a class="detail-button" href="#">Подробнее</a>
+          <a class="reservation-button" href="#">Забронировать</a>
           <span class="rating">Рейтинг: 9,2</span>
           </div>
         </section>
@@ -78,11 +79,11 @@
     <footer class="main-footer">
       <p class="footer-sedona">#visitSEDONA</p>
         <ul class="footer-social">
-          <li><a class="social-button" href="#"></a></li>
-          <li><a class="social-button" href="#"></a></li>
-          <li><a class="social-button" href="#"></a></li>
+          <li><a class="social-button twitter" href="#"></a></li>
+          <li><a class="social-button facebook" href="#"></a></li>
+          <li><a class="social-button youtube" href="#"></a></li>
         </ul>
-        <p>Website by</p>
+        <p class="htmlacademy-text">Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy.svg" alt="htmlacademy"></a>
     </footer>
   </body>
