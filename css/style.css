@@ -20,6 +20,7 @@ a {
 }
 
 .wrapper {
+  position: relative;
   min-height: 100vh;
   margin: 0 auto;
   width: 1200px;
@@ -524,6 +525,8 @@ a {
 }
 
 .main-footer {
+  position: absolute;
+  bottom: 0px;
   min-height: 120px;
   width: 1200px;
   display: flex;
