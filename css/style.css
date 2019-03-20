@@ -22,7 +22,6 @@ a {
 .wrapper {
   margin: 0 auto;
   width: 1200px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,14 +55,18 @@ a {
   align-items: center;
 }
 
+.item {
+  width: 100px;
+}
+
 .item:nth-child(1) {
-  margin-left: 30px;
-  margin-right: 150px;
+  margin-left: 31px;
+  margin-right: 141px;
 }
 
 .item:nth-child(3) {
-  margin-left: 388px;
-  margin-right: 165px;
+  margin-left: 386px;
+  margin-right: 151px;
 }
 
 .logo {
@@ -93,7 +96,6 @@ a {
 }
 
 .main-page .container {
-  min-width: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,7 +112,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
   background-color: #ffffff;
 }
 
@@ -131,6 +132,7 @@ a {
 }
 
 .title-page {
+  width: 440px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -280,7 +282,7 @@ a {
 }
 
 .hotel-selection {
-  padding-top: 56px;
+  padding-top: 54px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,9 +292,10 @@ a {
 
 .big-text {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 30px;
+  line-height: 24px;
   color: #000000;
   text-align: center;
 }
@@ -323,6 +326,10 @@ a {
 .search-button:active {
   color: #ffffff;
   background-color: #503e33;
+}
+
+.form-search-none {
+  display: none;
 }
 
 .form-search {
@@ -363,16 +370,10 @@ a {
   cursor: pointer;
   border: none;
   background-color: inherit;
-  background-image: url(../img/calendar.png);
-  background-repeat: no-repeat;
 }
 
-.button-calendar:hover {
-  background-image: url(../img/calendar_hover.png);
-}
-
-.button-calendar:active {
-  background-image: url(../img/calendar_active.png);
+.calendar {
+  fill: #cacaca;
 }
 
 .adults-box {
@@ -388,6 +389,7 @@ a {
 
 .label-text {
   font-family: inherit;
+  color: #000000;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -529,17 +531,20 @@ a {
 
 .main-footer {
   width: 1200px;
-  min-height: 120px;
+  height: 120px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: absolute;
+  right: 0;
   bottom: 0px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .inner-page .main-footer {
-  margin-top: 0px;
+  position: static;
+  background-color: red;
+
 }
 
 .footer-hashtag {
@@ -550,6 +555,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  color: #000000;
 }
 
 .footer-social {
@@ -572,12 +578,14 @@ a {
 .social-button:focus {
   background-color: #669ec0;
 }
+
 .social-button:active {
   background-color: #5496bd;
 }
+
 .twitter {
   background-repeat: no-repeat;
-  background-image: url("../img/twitter_icon.svg");
+  background-image: url(../img/twitter_icon.svg);
   background-position: center;
 }
 
@@ -587,7 +595,7 @@ a {
 
 .facebook {
   background-repeat: no-repeat;
-  background-image: url("../img/facebook_icon.svg");
+  background-image: url(../img/facebook_icon.svg);
   background-position: center;
 }
 
@@ -597,7 +605,7 @@ a {
 
 .youtube {
   background-repeat: no-repeat;
-  background-image: url("../img/youtube_icon.svg");
+  background-image: url(../img/youtube_icon.svg);
   background-position: center;
 }
 
@@ -614,21 +622,22 @@ a {
 
 .htmlacademy-text {
   margin-right: 10px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .htmlacademy-logo {
-  width: 120px;
-  display: block;
-  background-image: url(../img/logo_name.png);
+  background-image: url(../img/logo_name.svg);
   background-repeat: no-repeat;
+  fill: red;
 }
-
+/*
 .htmlacademy-logo:hover {
-  background-image: url(../img/logo_name_hover.png);
+  background-image: url(../img/logo_name_hover.svg);
 }
 
 .htmlacademy-logo:active {
-  background-image: url(../img/logo_name_active.png);
+  background-image: url(../img/logo_name_active.svg);
 }
 
 /*-----------------------Вторая страница--------------------*/
@@ -637,7 +646,7 @@ a {
   box-sizing: border-box;
   padding-top: 26px;
   padding-left: 59px;
-  padding-right: 74px;
+  padding-right: 72px;
   width: 1200px;
   min-height: 217px;
   display: flex;
@@ -685,20 +694,20 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/checkbox_off.png);
+  background-image: url(../img/checkbox_off.svg);
   background-repeat: no-repeat;
 }
 
 .checkbox:checked + .form-text::before {
-  background-image: url(../img/checkbox_on.png);
+  background-image: url(../img/checkbox_on.svg);
 }
 
 .checkbox:disabled + .form-text::before {
-  background-image: url(../img/checkbox_off_dis.png);
+  background-image: url(../img/checkbox_off_dis.svg);
 }
 
 .checkbox:checked:disabled + .form-text::before {
-  background-image: url(../img/checkbox_on_dis.png);
+  background-image: url(../img/checkbox_on_dis.svg);
 }
 
 .type-house {
@@ -722,8 +731,8 @@ a {
 }
 
 .filter {
-  margin-left: 230px;
-  width: 318px;
+  margin-left: 235px;
+  width: 320px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -758,7 +767,7 @@ a {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -772,6 +781,7 @@ a {
 
 .price-controls input {
   margin: 0;
+  padding-top: 6px;
   width: 50px;
   font: inherit;
   color: inherit;
@@ -809,6 +819,7 @@ a {
 
 .range-toggle:hover {
   background-color: #1c4f80;
+  border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -821,10 +832,10 @@ a {
 
 .btn-transparent {
   margin-left: 85px;
-  padding: 6px 34px;
+  padding: 5px 34px;
   display: block;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -870,13 +881,14 @@ a {
   margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
+  color: #000000;
 }
 
 .sort-box a {
-  color: #cacaca;
   font-size: 12px;
   line-height: 18px;
-  border-bottom: 1px dotted #81b3d2;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2 ;
 }
 
 .sort-box a:nth-of-type(2) {
@@ -909,9 +921,9 @@ a {
 .up-dir-decoration {
   margin-right: 10px;
   display: block;
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-bottom: 10px solid #cacaca;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #cacaca;
 }
 
 .down-dir-decoration {
@@ -953,7 +965,7 @@ a {
   padding-top: 24px;
   padding-left: 72px;
   width: 1200px;
-  height: 150px;
+  height: 151px;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
@@ -972,6 +984,7 @@ a {
 }
 
 .hostel-image {
+  height: 90px;
   margin-top: 6px;
   margin-right: 30px;
 }
@@ -1018,7 +1031,7 @@ a {
 }
 
 .detail-button {
-  margin-right: 7px;
+  margin-right: 6px;
   padding: 3px 17px;
   font-weight: 700;
   color: #ffffff;
@@ -1089,6 +1102,7 @@ a {
   padding-left: 16px;
   width: 94px;
   height: 24px;
+  color: #666666;
   background-color: #f2f2f2;
 }
 
