@@ -354,26 +354,42 @@ a {
 
 .arrival-date-box,
 .departure-date-box {
-  padding-bottom: 30px;
+  margin-bottom: 29px;
   width: 458px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
   position: relative;
+  align-items: center;
 }
+
+.arrival-date {
+  margin-left: 21px;
+}
+
+.departure-date {
+  margin-left: 17px;
+}
+
+
 .button-calendar {
   padding: 0;
   width: 26px;
   height: 26px;
   position: absolute;
   right: 7px;
+  top: 8px;
   cursor: pointer;
   border: none;
   background-color: inherit;
+  fill: #cacaca;
 }
 
-.calendar {
-  fill: #cacaca;
+.button-calendar:hover {
+  fill: #000000;
+}
+
+.button-calendar:active {
+  fill: #81b3d2;
 }
 
 .adults-box {
@@ -397,9 +413,10 @@ a {
 }
 
 .form-search input {
+  box-sizing: border-box;
   padding-left: 13px;
-  width: 332px;
-  height: 35px;
+  width: 346px;
+  height: 38px;
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -415,8 +432,8 @@ a {
 }
 
 .form-search input:focus {
-  width: 330px;
-  height: 33px;
+  width: 346px;
+  height: 38px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
 }
@@ -537,17 +554,16 @@ a {
   align-items: center;
   position: absolute;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .inner-page .main-footer {
   position: static;
-  background-color: red;
-
 }
 
 .footer-hashtag {
+  margin-top: 17px;
   box-sizing: border-box;
   width: 400px;
   display: flex;
@@ -621,23 +637,22 @@ a {
 }
 
 .htmlacademy-text {
-  margin-right: 10px;
+  margin-right: 9px;
   line-height: 26px;
   color: #000000;
 }
 
 .htmlacademy-logo {
-  background-image: url(../img/logo_name.svg);
-  background-repeat: no-repeat;
-  fill: red;
+  padding-top: 8px;
+  fill: #000000;
 }
-/*
+
 .htmlacademy-logo:hover {
-  background-image: url(../img/logo_name_hover.svg);
+  fill: #81b3d2;
 }
 
 .htmlacademy-logo:active {
-  background-image: url(../img/logo_name_active.svg);
+  fill: #bdbbbc;
 }
 
 /*-----------------------Вторая страница--------------------*/
