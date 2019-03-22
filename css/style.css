@@ -306,6 +306,7 @@ a {
 }
 
 .search-button {
+  outline: none;
   margin-top: 46px;
   width: 568px;
   padding: 30px;
@@ -372,6 +373,7 @@ a {
 
 
 .button-calendar {
+  outline: none;
   padding: 0;
   width: 26px;
   height: 26px;
@@ -413,6 +415,7 @@ a {
 }
 
 .form-search input {
+  outline: none;
   box-sizing: border-box;
   padding-left: 13px;
   width: 346px;
@@ -455,6 +458,7 @@ a {
 
 .button-plus,
 .button-minus {
+  outline: none;
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
@@ -524,6 +528,7 @@ a {
 }
 
 .button {
+  outline: none;
   margin-top: 55px;
   padding: 16px 196px;
   width: 458px;
@@ -795,6 +800,7 @@ a {
 }
 
 .price-controls input {
+  outline: none;
   margin: 0;
   padding-top: 6px;
   width: 50px;
@@ -846,6 +852,7 @@ a {
 }
 
 .btn-transparent {
+  outline: none;
   margin-left: 85px;
   padding: 5px 34px;
   display: block;
@@ -1020,7 +1027,8 @@ a {
 }
 
 .hostel-name:active {
-  color: #cacaca;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .hostel-info-box {
