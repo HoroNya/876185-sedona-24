@@ -1,1 +1,1 @@
-var link=document.querySelector(".search-button"),popup=document.querySelector(".form-search-none");link.addEventListener("click",function(e){popup.classList.add("form-search")});
+var popup=document.querySelector(".form-search"),link=document.querySelector(".search-button");popup.classList.add("form-search-none"),link.addEventListener("click",function(e){popup.classList.remove("form-search-none")});

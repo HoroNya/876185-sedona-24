@@ -283,7 +283,7 @@ a {
 }
 
 .hotel-selection {
-  padding-top: 54px;
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,10 +293,10 @@ a {
 
 .big-text {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 36px;
   color: #000000;
   text-align: center;
 }
@@ -330,10 +330,6 @@ a {
   background-color: #503e33;
 }
 
-.form-search-none {
-  display: none;
-}
-
 .form-search {
   box-sizing: border-box;
   padding: 55px;
@@ -346,6 +342,10 @@ a {
   top: auto;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
+}
+
+.form-search-none {
+  display: none;
 }
 
 .data-box  {
@@ -648,7 +648,9 @@ a {
   color: #000000;
 }
 
+
 .htmlacademy-logo {
+  overflow: hidden;
   padding-top: 8px;
   fill: #000000;
 }
@@ -690,7 +692,7 @@ a {
 }
 
 .form-legend {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-size: 16px;
   font-weight: 700;
 }
@@ -734,7 +736,7 @@ a {
 .type-house {
   margin: 0;
   padding: 0;
-  padding-left: 15px;
+  padding-left: 17px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -968,6 +970,17 @@ a {
   border-top: 10px solid #000000;
 }
 .up-dir-decoration:hover {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #000000;
+}
+
+.down-dir-decoration:focus {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #000000;
+}
+.up-dir-decoration:focus {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 10px solid #000000;
